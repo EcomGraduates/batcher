@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+            <link rel="stylesheet" type="text/css" href="labels.css">
+      
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+      <meta charset="UTF-8">
+      <title>Hello World!</title>
+    </head>
+    <body>
+      <h1>Batcher</h1>
+      <p>Click Load Data to load csv files in the downloads folder.</p>
+      <input type="button" id="createBatches" value="Load Data" />
+
+
+      <p>Click Batch It to create batches for orders found after the order specified in the Starting Invoice field below.</p>
+      Starting Invoice: <input type="text" name="startingInvoice">
+      <input type="button" id="getOrders" value="Batch It" />
+    </body>
+
+    <script src="create-labels.js"></script>
+    <script src="read-csv.js"></script>
+    <script src="batch.js"></script>
+    <script src="get-orders.js"></script>
+    <!-- <script>
+    require('./read-csv.js')
+    </script> -->
+  </html>

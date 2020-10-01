@@ -1,0 +1,115 @@
+.pageContainer {
+    width:672px;
+    display: flex;  
+    flex-direction: row;
+    
+}
+
+.label{
+    width: 193px;
+    display: flex;  
+flex-direction: row;
+height:63.6px;
+border: .05px solid black ;
+box-sizing: border-box;
+padding: 1px;  
+}
+
+.labelDivider {
+    width: 26px;
+    background-color: lightgrey;
+}
+.horizontalElements {
+    width: 157px;
+    display: flex;  
+    flex-direction: column;
+    text-align:center;
+
+}
+
+
+.column {
+    width:672px;
+display: flex;  
+flex-direction: column;
+
+}
+
+.innerDiv {
+display: table-cell;
+vertical-align:bottom;
+}
+.productDiv {
+    display: table;
+    /* height: 34.3px; */
+    box-sizing: border-box;
+    height:34.4px;
+    padding-bottom: 5px;
+    background-color: lightblue;
+    font-size: 8pt;
+ 
+ 
+    /* border: none;
+    overflow: auto;
+    outline: none;
+    resize:none; */
+}
+
+
+
+
+.size {
+    height: 15.9px;
+    white-space:nowrap;
+
+
+}
+.bottom {
+    height: 13.5px;
+
+}
+.invoice {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    width: 10px;
+    font-size: 10px;
+    text-align:center;
+
+}
+
+
+
+.top {
+    height: 48px;
+    width: 816px;
+
+
+}
+
+@page {
+    size: letter;
+    margin-left:27px;
+    margin-top: 46px;
+    margin-bottom: 46px;
+    margin-right: 0px;
+}
+
+
+@media print {
+
+    .pageContainer{
+        page-break-inside: avoid;
+    }
+    body {
+        -webkit-print-color-adjust: exact;}
+    }
+
+
+   
+
+    #ruler {
+
+         visibility: hidden; 
+         white-space: nowrap; 
+        }
+
